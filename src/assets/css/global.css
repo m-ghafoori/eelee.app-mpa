@@ -1,0 +1,242 @@
+/* Element tags */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: fit-content;
+    height: fit-content;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+/* Classes */
+
+/* Mouse Pointers */
+
+.pointer-white {
+    cursor: url('/src/assets/images/svg/pointer-white.svg'), auto !important;
+}
+
+.pointer-gold {
+    cursor: url('/src/assets/images/svg/pointer-gold.svg'), auto !important;
+}
+
+.pointer-maroon {
+    cursor: url('/src/assets/images/svg/pointer-maroon.svg'), auto !important;
+}
+
+.pointer-green {
+    cursor: url('/src/assets/images/svg/pointer-green.svg'), auto !important;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.justify-content-start {
+    justify-content: flex-start !important;
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.justify-content-around {
+    justify-content: space-around !important;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.align-items-start {
+    align-items: flex-start !important;
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
+
+.align-self-center {
+    align-self: center !important;
+}
+
+.align-self-start {
+    align-self: flex-start !important;
+}
+
+.align-self-end {
+    align-self: flex-end !important;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.preload {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gluten', cursive;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: url('/src/assets/images/svg/pointer-maroon.svg'), auto;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.digital {
+    background: transparent;
+    color: #ffe11f;
+    font-size: calc(1vw + 1.5vh);
+    height: calc(2vw + 2vh);
+    width: calc(2vw + 2vh);
+    text-align: center;
+    padding-top: 0.1vw;
+}
+
+.counter {
+    background: transparent;
+    color: white;
+    font-size: calc(1vw + 1.5vh);
+    margin: 1vh 0;
+}
+
+.timer {
+    font-family: 'Timer';
+    font-size: calc(1vw + 1.8vh);
+}
+
+.running .counter {
+    color: greenyellow !important;
+}
+
+.lost .counter {
+    color: orangered !important;
+}
+
+.won .counter {
+    color: rgb(18, 255, 255) !important;
+}
+
+.running .digital {
+    color: white !important;
+}
+
+.lost .digital {
+    color: orange !important;
+}
+
+.won .digital {
+    color: greenyellow !important;
+}
+
+.input-wrapper {
+    height: 100%;
+    padding: 0;
+    margin-bottom: auto;
+    border-left: calc(0.1vw + 0.2vh) solid;
+    border-right: calc(0.1vw + 0.2vh) solid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-span {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    display: flex;
+}
