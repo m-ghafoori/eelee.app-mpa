@@ -5,18 +5,31 @@ module.exports = {
         title: "EELee App Design",
         chunks: ["chunk-vendors", "chunk-common", "index"],
       },
-      contact: "./src/pages/contact/main.js",
-    //   "order": {
-    //     entry: "./src/pages/order/main.js",
-    //     // template: "public/order.html",
-    //     // filename: "order.html",
-    //     title: "Order",
-    //     chunks: ["chunk-vendors", "chunk-common", "order"],
-    //   },
-      // index: './src/main.js',
-      // home: './src/pages/home/main.js',
-      // contact: './src/pages/contact/main.js',
-      // order: './src/pages/order/main.js',
+      portfolio: {
+        entry: "./src/pages/portfolio/main.js",
+        title: "EELee - Portfolio",
+        chunks: ["chunk-vendors", "chunk-common", "portfolio"],
+      },
+      applications: {
+        entry: "./src/pages/applications/main.js",
+        title: "EELee - MineSweeper",
+        chunks: ["chunk-vendors", "chunk-common", "applications"],
+      },
+      donate: {
+        entry: "./src/pages/donate/main.js",
+        title: "EELee - Donate Us",
+        chunks: ["chunk-vendors", "chunk-common", "donate"],
+      },
+      order: {
+        entry: "./src/pages/order/main.js",
+        title: "EELee - Order Now!",
+        chunks: ["chunk-vendors", "chunk-common", "order"],
+      },
+      contact: {
+        entry: "./src/pages/contact/main.js",
+        title: "EELee - Contact Us",
+        chunks: ["chunk-vendors", "chunk-common", "contact"],
+      },
     }
   }
   
