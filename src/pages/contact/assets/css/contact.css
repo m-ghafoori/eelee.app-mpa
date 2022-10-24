@@ -82,6 +82,14 @@
     margin: 0;
 }
 
+#idpc-contactEmail:hover {
+    color: #2ec7a6;
+}
+
+#idpc-contactEmail:active {
+    color: #0479d3;
+}
+
 #idpc-messageDiv {
     width: 100%;
     height: 30vh;

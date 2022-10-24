@@ -13,7 +13,12 @@
       <div id="idpc-contactForm" class="d-flex flex-column align-items-start">
         <p id="idpc-contactPar">
           You can fill the form below or email us to
-          <span id="idpc-contactEmail">"eelee.app@gmail.com"</span>
+          <a
+            id="idpc-contactEmail"
+            href="mailto:manager@eelee.app"
+            class="hoverable"
+            >"manager@eelee.app"</a
+          >
         </p>
         <div class="idpc-clientInfo">
           <span>Name:</span>
