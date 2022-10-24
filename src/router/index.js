@@ -9,9 +9,9 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => {
       if (window.innerWidth/window.innerHeight > 1) {
-        return import('../views/Home.vue');
+        return import('../views/home/Home.vue');
       } else {
-        return import('../views/HomeMobile.vue');
+        return import('../views/home-mobile/HomeMobile.vue');
       }
     }
   },

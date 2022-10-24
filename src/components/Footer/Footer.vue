@@ -2,7 +2,7 @@
   <footer :class="`footer ${footerClassList}`">
     <div :class="`footer-nav ${footerNavClassList}`">
       <a
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/in/m-ghafoori"
         target="blank"
         :class="`hoverable align-self-${linkedinAlign} ${linkedinClassList}`"
         @mouseenter="onLinkedinMouseEnter"
@@ -14,8 +14,8 @@
           :bgColor="linkedinBgColor"
         />
       </a>
-      <router-link
-        to="/contact"
+      <a
+        href="/contact"
         :class="`hoverable align-self-${emailAlign} ${emailClassList}`"
         @mouseenter="onEmailMouseEnter"
         @mouseleave="onEmailMouseLeave"
@@ -24,7 +24,7 @@
           :basicColor="emailIconColor"
           :gradientColor="iconGradientColor"
         />
-      </router-link>
+      </a>
       <a
         href="https://t.me"
         target="blank"
@@ -38,13 +38,13 @@
         />
       </a>
     </div>
-    <router-link
-      to="/portfolio"
+    <a
+      href="/portfolio"
       title="About Us"
       :class="`footer-note hoverable ${noteClassList}`"
       @mouseenter="onNoteMouseEnter"
       @mouseleave="onNoteMouseLeave"
-      >&copy; 2022 - EELee App Design</router-link
+      >&copy; 2022 - EELee App Design</a
     >
   </footer>
 </template>
@@ -62,6 +62,9 @@ export default {
     Telegram,
   },
   props: {
+        reload: {
+      default: false ,
+    },
     iconBasicColor: {
       default: "#0d8a6f",
     },
@@ -136,14 +139,14 @@ export default {
 
   watch: {
     wideHome() {
-      this.isMounted && this.$router.go();
+      if (this.reload && this.isMounted) window.location.reload();
     },
   },
 
   computed: {
     wideHome() {
       return (
-        this.$route.path == "/" && this.windowWidth / this.windowHeight > 1
+        this.windowWidth / this.windowHeight > 1
       );
     },
   },
@@ -202,7 +205,6 @@ export default {
     this.onresize();
   },
   mounted() {
-    console.log("mount footer", Date.now());
     this.html = document.body.parentElement;
     this.footer = document.querySelector(".footer");
     this.footerNav = document.querySelector(".footer-nav");

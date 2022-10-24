@@ -85,10 +85,6 @@ export default {
       };
     },
   },
-
-  mounted() {
-    console.log("mount breed");
-  },
 };
 </script>
 

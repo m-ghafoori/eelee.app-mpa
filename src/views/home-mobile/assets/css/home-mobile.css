@@ -1,0 +1,238 @@
+/* Fonts */
+
+@font-face {
+    font-family: Logo-Font;
+    src: url("../fonts/logo-mobile.ttf");
+}
+
+@font-face {
+    font-family: Star-Bold;
+    src: url("../fonts/StarBold.ttf");
+}
+
+@font-face {
+    font-family: Illustrated;
+    src: url("../fonts/SpaceallyIllustration-Regular.ttf");
+}
+
+@font-face {
+    font-family: Pandora;
+    src: url("../fonts/pandoralimiter_Teabeer.ttf");
+}
+
+/* ID Tags */
+
+#idpm-body {
+    width: 100%;
+    height: 100%;
+}
+
+#idpm-mainContainer {
+    position: relative;
+    background: url("../images/background.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 1;
+}
+
+#idpm-bodyCover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Header */
+
+#idpm-header {
+    width: 100vw;
+    height: 12vh;
+    font-family: Logo-Font;
+    color: #b2ffff !important;
+    font-size: calc(3vw + 3vh);
+    position: relative;
+    z-index: 2;
+    margin: 3vh 0;
+}
+
+#idpm-headerCover {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#idpm-logoLeft,
+#idpm-logoRight {
+    letter-spacing: calc(3vw + 3vh);
+}
+
+#idpm-logoRight {
+    transform: rotateY(180deg);
+}
+
+#idpm-logoMoon {
+    font-family: "Illustrated";
+    font-size: calc(2vw + 2vh);
+    /* padding-top: calc(1vw + 1vh); */
+    text-shadow: 0 0 3vw #a2e5ff;
+}
+
+#idpm-logo:hover {
+    color: #1c9b31 !important;
+}
+
+/* Showcase */
+
+/* Classes */
+
+.idpm-nav-link {
+    font-family: "Pandora";
+    font-size: calc(1.5vw + 1.5vh);
+    letter-spacing: 0.42vw;
+    text-decoration: none;
+    color: #a2e5ff !important;
+}
+
+.idpm-nav-link:hover {
+    color: #27b595 !important;
+}
+
+/* ID Tags */
+
+#idpm-showcase {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 15vh;
+}
+
+#idpm-orderDiv {
+    width: fit-content;
+    font-family: "Creepster", cursive;
+    font-size: calc(2vw + 2vh);
+    text-align: center;
+    background: linear-gradient(to bottom, #ffe56f, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.8vw;
+    white-space: nowrap;
+    position: relative;
+    bottom: 4vh;
+}
+
+#idpm-orderDiv:hover {
+    background: #f8cc09;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#idpm-orderDiv:active {
+    background: #8e0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#idpm-centralDiv {
+    width: 100%;
+    height: 40vh;
+    /* flex-grow: 1; */
+}
+
+#idpm-navbar {
+    width: 45%;
+    margin: 0 0 0 2vw;
+}
+
+#idpm-navbar * {
+    width: fit-content;
+    height: fit-content;
+    margin: calc(1vw + 1vh) 0;
+    transform: rotate(-33deg);
+}
+
+#idpm-orderCentral {
+    width: 100%;
+    height: 50%;
+    padding: 6vh 0 0 8%;
+}
+
+#idpm-orderRight {
+    font-family: "Star-Bold";
+    font-size: calc(2vw + 2vh);
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5vw;
+    color: #b2ffff;
+    width: fit-content;
+    transform: rotate(33deg);
+    flex-grow: 1;
+}
+
+#idpm-orderRight:hover {
+    color: #27b595 !important;
+}
+
+#idpm-orderRightStar {
+    font-family: "Illustrated";
+    font-size: calc(2vw + 2vh);
+    letter-spacing: 0;
+}
+
+#idpm-donateDiv {
+    width: 100%;
+    position: relative;
+    align-self: flex-end;
+}
+
+#idpm-donateLink {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+#idpm-donateIcon {
+    transform: rotate(150deg);
+    margin: 0 auto;
+}
+
+/* Notes */
+
+#idpm-skipAnimations {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Gluten', cursive;
+    font-size: calc(1.2vw + 1.2vh);
+    color: #a2e5ff;
+    white-space: nowrap;
+    line-height: 5vh;
+    letter-spacing: 0.7vw;
+    text-align: end;
+    position: relative;
+    left: 1vh;
+    margin-top: 8vh;
+    z-index: 4;
+    transform: rotate(-40deg);
+}
+
+#idpm-footerNote {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Gluten', cursive;
+    font-size: calc(1.2vw + 1.2vh);
+    color: #a2e5ff;
+    text-decoration: none;
+    white-space: nowrap;
+    transform: rotate(33deg);
+    position: relative;
+    right: 2vh;
+    margin-top: 8vh;
+}

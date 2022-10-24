@@ -93,16 +93,12 @@ export default {
     onSelectFocus() {
       this.labelColor = "red";
       this.labelBorderColor = "red";
-      console.log("focus", this.lastActiveElement, this.selectInput.id);
       this.lastActiveElement = this.selectInput.id;
-      console.log(`last active set to: ${this.lastActiveElement}`);
     },
     onSelectBlur() {
       this.labelColor = "black";
       this.labelBorderColor = "black";
-      console.log("blur", this.lastActiveElement, this.selectInput.id);
       this.lastActiveElement = "none";
-      console.log(`last active set to: ${this.lastActiveElement}`);
     },
   },
   mounted() {

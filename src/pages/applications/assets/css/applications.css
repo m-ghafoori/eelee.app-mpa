@@ -1,0 +1,27 @@
+/* Fonts */
+
+@font-face {
+  font-family: Timer;
+  src: url('../fonts/digital-7.ttf');
+}
+
+/* ID Tags */
+
+#idpa-body {
+  height: fit-content;
+  background: #91ffff;
+}
+
+/* Showcase */
+
+#idpa-showcase {
+  width: 80vw;
+  height: fit-content;
+  position: relative;
+  top: 15vh;
+  background-image: repeating-linear-gradient(to bottom right, #91ffff, #d4ffff 48%, #91ffff 54%);
+  border: 0.2vw solid #fff;
+  border-radius: 2vw;
+  margin-bottom: calc(20vw + 20vh);
+  padding: 2vh 1vw calc(4.5vw + 4.5vh) 1vw;
+}

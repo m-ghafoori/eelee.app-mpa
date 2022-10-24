@@ -1,0 +1,52 @@
+#idpd-body {
+    background: #3ca05d;
+}
+
+#idpd-showcase {
+    width: fit-content;
+    height: 55vh;
+    position: relative;
+    align-self: center;
+    top: 20vh;
+    border: 0.4vw double #ffbf1f;
+    border-radius: calc(1vw + 1vh);
+    outline: 0.4vw double #fff;
+    padding: calc(1.5vw + 1.5vh);
+    padding-top: calc(3vw + 3vh);
+}
+
+#idpd-donationForm {
+    width: inherit;
+    height: 40%;
+    font-family: 'Josefin Slab';
+    font-size: calc(2.5vw + 2.5vh);
+    color: #ffbf1f;
+    align-self: center;
+}
+
+#idpd-donationTxt {
+    font-family: 'Gluten', cursive;
+    color: #fff;
+    margin: calc(2vw + 2vh) 0;
+}
+
+#idpd-donateButton {
+    font-family: 'Josefin Slab', cursive;
+    font-size: calc(2vw + 2vh);
+    color: #fff;
+    border: 0.1vw solid #ffbf1f;
+    border-radius: calc(1vw + 1vh);
+    background: transparent;
+    padding: calc(0.8vw + 0.8vh);
+    margin-top: calc(3vw + 3vh);
+}
+
+#idpd-donateButton:hover {
+    color: #ffbf1f;
+    border-color: #fff;
+}
+
+#idpd-donateButton:active {
+    color: #cf2860;
+    border-color: #cf2860;
+}

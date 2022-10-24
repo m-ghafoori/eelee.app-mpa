@@ -1,13 +1,13 @@
 <template>
   <header class="header">
-    <router-link
+    <a
       ref="logo"
-      to="/"
+      href="/"
       class="logo hoverable"
       @mouseover="onMouseOver"
       @mouseout="onMouseOut"
       @mousedown="onMouseDown"
-      >EELee</router-link
+      >EELee</a
     >
     <div class="header-nav">
       <VerticalMenu
@@ -16,24 +16,24 @@
       />
       <ul class="nav-ul">
         <li>
-          <router-link to="/" class="nav-link hoverable">Home</router-link>
+          <a href="/" class="nav-link hoverable">Home</a>
         </li>
         <li>
-          <router-link to="/portfolio" class="nav-link hoverable"
-            >Portfolio</router-link
+          <a href="/portfolio" class="nav-link hoverable"
+            >Portfolio</a
           >
         </li>
         <li>
-          <router-link to="/applications" class="nav-link hoverable">App</router-link>
+          <a href="/applications" class="nav-link hoverable">App</a>
         </li>
         <li>
-          <router-link to="/donate" class="nav-link hoverable"
-            >Donate</router-link
+          <a href="/donate" class="nav-link hoverable"
+            >Donate</a
           >
         </li>
         <li>
-          <router-link to="/order" class="nav-link hoverable"
-            >Order Now!</router-link
+          <a href="/order" class="nav-link hoverable"
+            >Order Now!</a
           >
         </li>
       </ul>
@@ -106,7 +106,6 @@ export default {
         el.addEventListener("mousedown", this.onMouseDown);
       }
     });
-    console.log("mount header");
   },
 };
 </script>

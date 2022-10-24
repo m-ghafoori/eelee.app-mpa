@@ -75,7 +75,6 @@ export default {
     docHasFocus(val) {
       if (!val) {
         this.blurOnMouseDown = true;
-        console.log("watcher called on blurOnMouseDown:", this.blurOnMouseDown);
       }
     },
   },
@@ -117,14 +116,8 @@ export default {
     },
     onSelectedSpanClick() {
       if (this.lastActiveElement == this.selectedSpan.id) {
-        console.log(
-          `onSelectSpanClick: lastActive: ${this.lastActiveElement}, this id:${this.selectedSpan.id}`
-        );
         this.selectedSpan.blur();
       } else {
-        console.log(
-          `onSelectSpanClick: lastActive: ${this.lastActiveElement}, this id:${this.selectedSpan.id}`
-        );
         this.selectedSpan.focus();
       }
     },

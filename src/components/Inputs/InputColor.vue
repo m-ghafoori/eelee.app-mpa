@@ -54,7 +54,6 @@ export default {
     docHasFocus(val) {
       if (!val) {
         this.blurOnMouseDown = true;
-        console.log("watcher called on blurOnMouseDown:", this.blurOnMouseDown);
       }
     },
     inputValue(val) {
@@ -105,9 +104,7 @@ export default {
         this.labelColor = "#f00";
         this.labelBorderColor = "#f00";
         this.colorInput.parentElement.style.borderColor = "#f00";
-        console.log("focus", this.lastActiveElement, this.colorInput.id);
         this.lastActiveElement = this.colorInput.id;
-        console.log(`last active set to: ${this.lastActiveElement}`);
       } else {
         this.colorInput.blur();
         setTimeout(() => {
@@ -120,9 +117,7 @@ export default {
         this.labelColor = "#000";
         this.labelBorderColor = "#000";
         this.colorInput.parentElement.style.borderColor = "#000";
-        console.log("blur", this.lastActiveElement, this.colorInput.id);
         this.lastActiveElement = "none";
-        console.log(`last active set to: ${this.lastActiveElement}`);
       }
     },
   },
